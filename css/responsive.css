@@ -1,0 +1,355 @@
+/* =========================================
+   RESPONSIVE DESIGN
+   FUTURISTIC GLASSMORPHISM WEBSITE
+========================================= */
+
+
+/* =========================================
+   TABLET
+   768px - 1024px
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: 90%;
+    }
+
+    /* Navbar */
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    /* Hero */
+
+    .hero {
+        padding: 100px 0 70px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-visual {
+        transform: scale(0.9);
+    }
+
+    /* About */
+
+    .about-grid {
+        gap: 30px;
+    }
+
+    /* Skills */
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Services */
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Projects */
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Statistics */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   767px AND BELOW
+========================================= */
+
+@media (max-width: 767px) {
+
+    /* General */
+
+    .container {
+        width: 92%;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+
+    /* =========================================
+       NAVBAR
+    ========================================= */
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 0;
+
+        padding: 20px 0;
+
+        background: rgba(10, 20, 30, 0.95);
+
+        backdrop-filter: blur(20px);
+
+        border-bottom: 1px solid rgba(67, 217, 231, 0.2);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+
+    /* =========================================
+       HERO
+    ========================================= */
+
+    .hero {
+        min-height: auto;
+        padding: 120px 0 70px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        line-height: 1.15;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-visual {
+        margin-top: 50px;
+        transform: scale(0.75);
+    }
+
+
+    /* =========================================
+       SECTION TITLES
+    ========================================= */
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+
+
+    /* =========================================
+       ABOUT
+    ========================================= */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+    /* =========================================
+       SKILLS
+    ========================================= */
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================================
+       SERVICES
+    ========================================= */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================================
+       PROJECTS
+    ========================================= */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================================
+       STATISTICS
+    ========================================= */
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+
+    /* =========================================
+       EXPERIENCE
+    ========================================= */
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-item {
+        padding-left: 20px;
+    }
+
+
+    /* =========================================
+       TESTIMONIALS
+    ========================================= */
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================================
+       CONTACT
+    ========================================= */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   480px AND BELOW
+========================================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 94%;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    /* Hero */
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-visual {
+        transform: scale(0.65);
+    }
+
+
+    /* Section */
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+
+    /* Statistics */
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Cards */
+
+    .glass-card {
+        padding: 20px;
+    }
+
+
+    /* Contact */
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+}
